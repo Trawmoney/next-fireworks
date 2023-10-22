@@ -16,7 +16,7 @@ export async function POST(req: Request) {
   // Ask Fireworks for a streaming chat completion using Llama 2 70b model
   // @see https://app.fireworks.ai/models/fireworks/llama-v2-70b-chat
   const response = await fireworks.chat.completions.create({
-    model: 'accounts/fireworks/models/llama-v2-70b-chat',
+    model: 'accounts/fireworks/models/mistral-7b-instruct-4k',
     stream: true,
     max_tokens: 1000,
     messages,
